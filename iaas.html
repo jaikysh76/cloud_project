@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>cloud| iaas </title>
+</head>
+<body bgcolor='skyblue'> 
+<p style='color:red; text-align:center; font-size:30px';><b><u>iaas</u></b></p> 
+<h2>  Infrastructure as a Service (IaaS): hardware is provided by an external provider and managed for you</h2>
+<body style='float:left;'></body>
+<fieldset style='color:black; margin-left:2cm; border-radius:0em; text-align:center; float:left; background-color:blue; font-size:20px'>
+<legend><b>fill the form</b> </legend>
+<form action="/cgi-bin/rcv.cgi" method="POST">
+SELECT YOUR OPERATING SYSTEM YOU WANT TO INSTALL<br/><br/>
+<input type="radio" name="s"  value="fe">FEDORA  <br />
+<input type="radio" name="s" value="re">REDHAT <br >
+
+
+
+<input type="text" name="osn" required placeholder="enter  OS name"> <br />
+<input type="number" name="osr" required placeholder="enter  RAM in MB"> <br />
+
+<input type="number" name="osc"  required placeholder="enter  CPU core"> <br />
+<input type="number" name="osh" required placeholder="enter  HDD in GB"> <br />
+<input type="number" name="port"  required placeholder="port no"> <br />
+<input type="number" name="port1"  required placeholder="enter uid no to view in nvnc"><br />
+<input type="submit" style='background-color:#4616ad; color:white;' value="launch ur os">
+</form>
+</fieldset>
+<fieldset style='color:black; margin-right:2cm; font-size:20px; text-align:center; float:right; background-color:pink;'>
+<legend>Shutdown OR Destroy OS</legend>
+<form method='POST'>
+<input type="text" name="osn" required placeholder="enter  OS name"><br />	
+</br></br><input type='submit'  formaction="/cgi-bin/off.py" style='background-color:#4616ad; color:white;' value="SHUT OFF OS">
+     
+	</br>  </br><input type='submit' formaction="/cgi-bin/delete.py" style='background-color:#4616ad; color:white;' value="delete os">
+</form>
+</fieldset>
+</body>
+</html>
+
+
